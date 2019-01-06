@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CrystalsCollector </title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    <p class="title">CrystalsCollector!</p>
+    <p class="intro">
+        You will be given a random number at the start of the game.<br>
 
+        There are four crystals below. By clicking on a crystal you will add a specific number of points to your total score.<br>
+
+        You win the game by matching your total score goes above the random number.<br>
+
+        The value of each crystal is hidden from you until you click on. <br>
+
+        Each time when the game starts, the game will change the value of each crystal. <br>
+    </p>
+    <p id="answer"></p>
+    <p id="result">
+        <span id="resultMessage"></span><br>
+        <span>Wins:</span><span id="wins"></span>
+        <span>Losses:</span><span id="losses"></span>
+    </p>
+    <div class="clearfix">
+        <button id="crystal1"><img src="assets/images/crystal.png"></button>
+        <button id="crystal2"><img src="assets/images/crystal_2.png"></button>
+        <button id="crystal3"><img src="assets/images/gem.png"></button>
+        <button id="crystal4"><img src="assets/images/gemstone.png"></button>
+    </div>    
+    <p class="scoreTitle">Your total score is:</p>
+    <p id="totalScore" class="scoreResult"></p>
+    <!--jquery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--script-->
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
