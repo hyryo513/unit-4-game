@@ -43,7 +43,7 @@ function resultCheck(){
     }
     else if(totalScore > answer){
         losses++;
-        resultMessage = "You Loss!";
+        resultMessage = "You Lost!";
         $("#resultMessage").text(resultMessage);
         $("#losses").text(losses);
         initializtion();
