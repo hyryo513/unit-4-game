@@ -51,9 +51,9 @@ function resultCheck(){
 };
 
 function scoreCal(){
-    var crystalValue;
-    crystalValue = parseInt($(this).attr("data-crystalvalue"));
-    totalScore = totalScore + crystalValue;
+    resultMessage = "";
+    $("#resultMessage").text(resultMessage);
+    totalScore = totalScore + parseInt($(this).attr("data-crystalvalue"));
     $("#totalScore").text(totalScore);
     resultCheck();
 };
